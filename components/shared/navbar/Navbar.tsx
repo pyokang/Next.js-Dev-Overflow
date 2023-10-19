@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Theme } from "./Theme";
+import { SignedIn, UserButton } from "@clerk/nextjs";
+import { MobileNav } from "./MobileNav";
+import { GlobalSearch } from "../search/GlobalSearch";
 
 export const Navbar = () => {
   return (
@@ -16,13 +19,19 @@ export const Navbar = () => {
           Dev <span className="text-primary-500">Overflow</span>
         </p>
       </Link>
-      {/* GlobalSearch */}
+      <GlobalSearch />
       <div className="flex-between gap-5">
         <Theme />
-        {/* <SignedIn>
-            <UserButton afterSignOutUrl="/" appearance={{elements: {avatarBox: 'h-10 w-10'}, variables: {colorPrimary: '#ff7000'}}}} />
-        </SignedIn> */}
-        {/* <MobileNavigationBar /> */}
+        <SignedIn>
+          <UserButton
+            afterSignOutUrl="/"
+            appearance={{
+              elements: { avatarBox: "h-10 w-10" },
+              variables: { colorPrimary: "#ff7000" },
+            }}
+          />
+        </SignedIn>
+        <MobileNav />
       </div>
     </nav>
   );
