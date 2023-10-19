@@ -80,11 +80,11 @@
   .h2-bold {
     @apply text-[24px] font-bold leading-[31.2px];
   }
+  .h3-bold {
+    @apply text-[20px] font-bold leading-[24.8px];
+  }
   .h2-semibold {
     @apply text-[24px] font-semibold leading-[31.2px];
-  }
-  .h3-bold {
-    @apply text-[20px] font-bold leading-[26px];
   }
   .h3-semibold {
     @apply text-[20px] font-semibold leading-[24.8px];
