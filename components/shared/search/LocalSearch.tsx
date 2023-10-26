@@ -14,7 +14,7 @@ type TProps = {
 
 export const LocalSearch = (props: TProps) => {
   const {
-    route,
+    // route,
     imgSrc = "/assets/icons/search.svg",
     iconPosition = "left",
     placeholder = "Type something to search...",

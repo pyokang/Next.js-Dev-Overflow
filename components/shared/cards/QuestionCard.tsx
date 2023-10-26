@@ -17,8 +17,7 @@ type TProps = {
 };
 
 export const QuestionCard = ({ question }: TProps) => {
-  const { id, title, tags, author, upvotes, views, answers, createdAt } =
-    question;
+  const { id, title, tags, author, upvotes, views, answers } = question;
 
   return (
     <div className="card-wrapper rounded-[10px] p-9 sm:px-11">

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
 
 export default function Layout({ children }: { children: ReactNode }) {
-  return <main className="min-h-screen w-full flex-center">{children}</main>;
+  return <main className="flex-center min-h-screen w-full">{children}</main>;
 }
