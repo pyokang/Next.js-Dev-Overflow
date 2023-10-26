@@ -38,7 +38,7 @@ export const QuestionCard = ({ question }: TProps) => {
       {/* Author and views, upvotes and answers */}
       <div className="flex-between mt-6 w-full flex-wrap gap-3">
         <Metric
-          imgUrl="/assets/icons/avatar.svg"
+          imgUrl={author.picture}
           alt="Avatar"
           value={author.name}
           title=" - asked 1 hour ago"
