@@ -54,7 +54,7 @@ export const QuestionForm = ({ mongoUserId }: TProps) => {
         title: values.title,
         content: values.explanation,
         tags: values.tags,
-        author: mongoUserId,
+        author: mongoUserId as any,
         path: pathname,
       });
 
@@ -144,6 +144,7 @@ export const QuestionForm = ({ mongoUserId }: TProps) => {
                 {/* TODO: Add an editor component */}
                 <Editor
                   apiKey={process.env.NEXT_PUBLIC_TINY_API_KEY}
+                  // @ts-ignore
                   onInit={(_, editor) => (editorRef.current = editor)}
                   initialValue=""
                   onBlur={field.onBlur}
