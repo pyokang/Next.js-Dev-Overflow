@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -39,10 +38,7 @@ export const Filter = ({
         <SelectContent>
           <SelectGroup>
             {filters.map((filter) => (
-              <SelectItem
-                key={filter.value}
-                value={filter.value}
-              >
+              <SelectItem key={filter.value} value={filter.value}>
                 {filter.name}
               </SelectItem>
             ))}
